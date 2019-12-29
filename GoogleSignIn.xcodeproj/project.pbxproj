@@ -24,6 +24,7 @@
 		A385C6EB1FD5626B00FCAD41 /* GIDProfileData.h in Headers */ = {isa = PBXBuildFile; fileRef = A385C6E51FD5626B00FCAD41 /* GIDProfileData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A385C6EC1FD5626B00FCAD41 /* GIDSignIn.h in Headers */ = {isa = PBXBuildFile; fileRef = A385C6E61FD5626B00FCAD41 /* GIDSignIn.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A385C6ED1FD5626B00FCAD41 /* GIDSignInButton.h in Headers */ = {isa = PBXBuildFile; fileRef = A385C6E71FD5626B00FCAD41 /* GIDSignInButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BBB0F40523B97334000F9F83 /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBB0F40423B97334000F9F83 /* AuthenticationServices.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		A385C6E61FD5626B00FCAD41 /* GIDSignIn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GIDSignIn.h; path = GoogleSignIn/GoogleSignIn.framework/Headers/GIDSignIn.h; sourceTree = "<group>"; };
 		A385C6E71FD5626B00FCAD41 /* GIDSignInButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GIDSignInButton.h; path = GoogleSignIn/GoogleSignIn.framework/Headers/GIDSignInButton.h; sourceTree = "<group>"; };
 		A385C6E81FD5626B00FCAD41 /* GoogleSignIn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GoogleSignIn.h; path = GoogleSignIn/GoogleSignIn.framework/Headers/GoogleSignIn.h; sourceTree = "<group>"; };
+		BBB0F40423B97334000F9F83 /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AuthenticationServices.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				A31FAECF1FD1BBDA00DD6944 /* CoreText.framework in Frameworks */,
 				A31FAECD1FD1BBAB00DD6944 /* Security.framework in Frameworks */,
 				A31FAEC91FD1BB7900DD6944 /* CoreGraphics.framework in Frameworks */,
+				BBB0F40523B97334000F9F83 /* AuthenticationServices.framework in Frameworks */,
 				A31FAEC71FD1BB6000DD6944 /* UIKit.framework in Frameworks */,
 				A31FAEC51FD1BB5800DD6944 /* Foundation.framework in Frameworks */,
 				A31FAEB71FD1B9A100DD6944 /* SystemConfiguration.framework in Frameworks */,
@@ -109,6 +112,7 @@
 		A31FAEB31FD1B99800DD6944 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BBB0F40423B97334000F9F83 /* AuthenticationServices.framework */,
 				A30DE067215C1972004A3665 /* LocalAuthentication.framework */,
 				A31FAECE1FD1BBDA00DD6944 /* CoreText.framework */,
 				A31FAECC1FD1BBAB00DD6944 /* Security.framework */,
@@ -179,6 +183,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = A31FAE941FD1B91C00DD6944;
@@ -255,7 +260,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -303,7 +308,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
